@@ -13,7 +13,8 @@ public class DataSourceUtils {
 
 	private static DataSource dataSource = new ComboPooledDataSource();
 
-	private static ThreadLocal<Connection> tl = new ThreadLocal<Connection>();
+	//private static ThreadLocal<Connection> tl = new ThreadLocal<Connection>();
+	private static ThreadLocal<Connection> tl = new ThreadLocal<>();
 
 	public static DataSource getDataSource() {
 		return dataSource;
